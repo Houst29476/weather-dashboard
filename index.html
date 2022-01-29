@@ -22,15 +22,14 @@
     <link href="/assets/style.css" rel="stylesheet">
 </head>
 
+<!------ Background Image & Header ----------> 
 <body class="background-image">
-  <!------ Background Image & Header ---------->  
   <header>
     <div class="page-title">
         <header id="page-header" class="container-fluid text-center pb-3 pt-3"><h1 class="text-white">Weather Forecast</h1>
     </div>
   </header>
     
-  
   <!-------- Search Box --------->
     <div class="container-fluid row">
       <div class="justify-content-center left_div pt-3 col-3">
@@ -42,7 +41,29 @@
         <button id="search-btn" class="btn my-sm-0 ms-1 btn-outline-light my-2" type="submit"><i class="bi bi-search"></i>
         </button>
       </span>
+      <div class="border-bottom border-1 border-white ms-1 mt-4"></div>
     </div>
+
+  <!----- Previous Searched Cities ------->
+    <h3 class="text-white pt-4 pl-3">Recent Searches: </h3>
+    <div id="recent-searches-container" class="container col-12 my-3"></div>
+
+  <!------------ Todays Weather -------------->
+    <div class="current-weather pt-3 col-9">
+      <h2 class="justify-content-center p-3 text-white" id="city-name"></h2>
+        <div class="row">
+          <div class="col-6">
+            <p id="current-temp"></p>
+            <p id="current-humidity"></p>
+            <p id="current-wind-speed"></p>
+            <img id="current-icon-div" src="">
+          </div>
+        </div>
+    </div>
+
+
+
+
 
   <!----- Bootstrap JS Link ------>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
