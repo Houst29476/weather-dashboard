@@ -15,7 +15,7 @@ function showDate(dt) {
 }
 
 // ----------- SEARCH ---------- //
-$(".searchBtn").on("click", function (e) {
+$(".search-Btn").on("click", function (e) {
     e.preventDefault();
 
     var cityName = $("#searchCity").val();
